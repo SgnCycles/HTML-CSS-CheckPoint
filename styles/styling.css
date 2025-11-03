@@ -104,8 +104,8 @@ text-align: center;
 .team-info-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 .team-info-container H2{
