@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; 
+}
+
+.header-site-logo {
+  display: block;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu-desktop {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.navigation-menu-desktop li {
+  margin-right: 50px;
+}
+
+.navigation-menu-desktop li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home {
+  color: #FFC63C;
+}
+
+.navigation-menu-mobile {
+  display: none;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding-bottom: 60px;
+}
+
+.hero-text {
+  color: white;
+  height: 100%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text p{
+padding: 0 50px;
+text-align: center;
+}
+
+.hero-book-button {
+  background-color: #FFC63C;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.team-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team-info-container H2{
+  width: 100%;
+  text-align: center;
+}
+
+.trainer-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 24px;
+}
+
+.trainer-card {
+  width: 100%;
+  align-items: center;
+  background-color: #E7E7E7;
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  padding: 30px;
+}
+
+.trainer-card-image img{
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+.trainer-card-name{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.trainer-card-name p {
+  margin-bottom: 0;
+}
+
+.check-bio {
+  background-color: #FFC63C;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 3px;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.freepik-container {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: none;
+}
+
+.freepik-container .freepik a {
+  color: white;
+}
+
+.freepik .freepik-footer a {
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  padding: 24px;
+  background-color: #FFC63C;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+
+  .navigation-menu-desktop {
+    display: none;
+  }
+
+  .navigation-menu-mobile {
+    display: block;
+    margin-right: 0.75rem;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    background-position: center top;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .trainer-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .freepik , .hero-freepik{
+    font-size: 0.6rem;
+  }
+}
